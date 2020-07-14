@@ -1,7 +1,5 @@
 package yunjiayu.servlet;
 
-import yunjiayu.dao.ArticleDAO;
-import yunjiayu.model.Article;
 import yunjiayu.model.Response;
 import yunjiayu.util.JSONUtil;
 
