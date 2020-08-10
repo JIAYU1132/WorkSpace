@@ -23,7 +23,6 @@ public abstract class AbstractBaseServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");//设置请求数据的编码格式
         resp.setCharacterEncoding("UTF-8");//设置响应数据的编码格式
         resp.setContentType("application/json");//设置响应的数据格式
-
         Response response = new Response();
         try {
             Object o = process(req, resp);
