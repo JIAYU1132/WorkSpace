@@ -43,7 +43,7 @@ public class LoginFilter implements Filter {
                 String basePath = scheme + "://" + host + ":" + port + contextPath;
                 httpServletResponse.sendRedirect(basePath + "/public/index.html");
                 return;
-            } else if (!"/user/login".equals(uri) && !uri.startsWith("/public/")
+            } else if (!"/user/login".equals(uri) && !"/user/register".equals(uri)&& !uri.startsWith("/public/")
                             && !uri.startsWith("/static/")) {
                 httpServletRequest.setCharacterEncoding("UTF-8");//设置请求数据的编码格式
                 httpServletResponse.setCharacterEncoding("UTF-8");//设置响应数据的编码格式

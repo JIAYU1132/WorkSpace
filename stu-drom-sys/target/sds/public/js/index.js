@@ -26,7 +26,7 @@ let devLoginData = {
 };
 
 $(function () {
-    // $("#btn_to_register").hide();//如果要开放注册功能，打开注册按钮
+    //$("#btn_to_register").hide();//如果要开放注册功能，打开注册按钮
     resetConfirmPassword();
     $("#login_form").submit(function (e) {
         let form = this;

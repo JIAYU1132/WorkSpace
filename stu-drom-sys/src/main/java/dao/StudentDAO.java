@@ -20,7 +20,7 @@ public class StudentDAO {
         ResultSet rs = null;
         try {
             c = DBUtil.getConnection();
-            StringBuilder sql =new StringBuilder("select s.id," +
+            StringBuilder sql = new StringBuilder("select s.id," +
                     "       s.student_name," +
                     "       s.student_graduate_year," +
                     "       s.student_major," +
@@ -195,7 +195,6 @@ public class StudentDAO {
             for (int i = 0; i < ids.length; i++) {
                ps.setInt(i + 1, Integer.parseInt(ids[i]));
             }
-
             return ps.executeUpdate();
         } catch (Exception e) {
             throw new RuntimeException("删除学生信息出错", e);

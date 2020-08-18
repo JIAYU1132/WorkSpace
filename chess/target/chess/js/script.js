@@ -38,7 +38,8 @@ function setScreenText(me) {
 // 初始化 websocket
 //////////////////////////////////////////////////
 
-var websocket = new WebSocket("ws://123.56.169.191:8080/chess/game/" + gameInfo.userId);
+//var websocket = new WebSocket("ws://123.56.169.191:8080/chess/game/" + gameInfo.userId);
+var websocket = new WebSocket("ws://127.0.0.1:8080/chess/game/" + gameInfo.userId);
 
 // 给 websocket 对象实现对应的方法
 websocket.onopen = function() {
